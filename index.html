@@ -6,33 +6,53 @@
     <meta name = "keywords" content= "html, course, css, tags, anna, cv, resume">
     <meta name = "description" content="CV-website of Anna Bashkatova">
     <title>Anna Baskatova Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="my_avatar.png" alt="There is should be my avatar" width="200">
+    <div class="container">
+    <div class="info">
+    <img src="my_avatar.png" alt="There is should be my avatar" class="avatar">
+    <div class="info-text">
     <h1>Anna Bashkatova</h1>
-    <p>I am an <strong>automation QA engineer</strong> with over <strong>3 years</strong> of experience.</p>
-    <p>I like <em>sport,travelling and dance</em></p>
-    <p><strong>My hobby:</strong></p>
-    <ul>
-        <li>GYM</li>
-        <li>Dance</li>
-        <li>Travelling</li>
-    </ul>
-    <p><strong>List of social networks:</strong> </p>
+    <p>I am an automation QA engineerwith over 3 years of experience.</p>
+    <p>I like sport, travelling and dance. </p>
+    <div class="info-networks">
+    <h2>List of social networks:</h2> 
     <p>
         <a href="https://t.me/BashkatovaAnna/" target= "_blank">Telegram</a>
         |
         <a href="https://www.linkedin.com/in/anna-bashkatova-844377199/" target= "_blank">Linkedin</a>    
     </p>
-    <h1>Work experience</h1>
-    <table>
-        <thead>
+</div>
+    </div>
+    </div>
+    <div class="card bg-lightblue">
+    <h2>My hobby:</h2>
+    <ul class ="list">
+        <li>GYM</li>
+        <li>Dance</li>
+        <li>Travelling</li>
+    </ul>
+   </div>
+   <!-- <div class="card bg-lightgreen">
+    <h2><strong>List of social networks:</strong></h2> 
+    <p>
+        <a href="https://t.me/BashkatovaAnna/" target= "_blank">Telegram</a>
+        |
+        <a href="https://www.linkedin.com/in/anna-bashkatova-844377199/" target= "_blank">Linkedin</a>    
+    </p>
+    </div> -->
+
+    <div class="card bg-lightpink">
+        <h2>Work experience</h2>
+    <table class="table">
+        <!-- <thead>
             <tr>
                 <th>Title</th>
                 <th>Role</th>
                 <th>Period</th>
             </tr>  
-        </thead>
+        </thead> -->
         <tbody>
             <tr>
                 <td>San Marko</td>
@@ -46,24 +66,26 @@
             </tr>  
         </tbody>
     </table>
-      <h1><strong>Contact me</strong></h1>
+</div>
+      <form action ="/" class = "form">
+      <h2>Contact me</h2>
       <form >
-        <div>
+          <div class="form-row">
+        <div class = "form-group">
             <label for="name">Your name:</label>
             <input type="name" id="name" placeholder="Enter your name">
         </div>
-        <br>
-        <div>
+        <div class = "form-group">
             <label for="email">Your email:</label>
             <input type="email" id="email" placeholder="Enter your email">
         </div>
-        <br>
-        <div>
+    </div>
+        <div  class = "form-group">
             <label for="message">Your message:</label>
-            <br>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message..."></textarea>
         </div>
-        <button  type="submit">Send!</button>
+        <input class="btn" type="submit" value="Send">
       </form>
+</div>
 </body>
 </html>
